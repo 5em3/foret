@@ -19,9 +19,10 @@ body {
     
 
 }
-.pa{
+#pa {
     color: white;
 }
+
     header:hover, .profile-container:hover, .bento-container:hover, footer:hover, .profile-container1:hover {
         transform: scale(1.5);
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
