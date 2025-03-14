@@ -2,7 +2,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #1a001a, #3d004d, #660080); /* Dégradé violet sombre */
+    background: linear-gradient(to bottom, #1a001a, #200027, #460058); /* Dégradé violet sombre */
     color: w1ite;
     display: flex;
     flex-direction: column;
