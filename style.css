@@ -140,20 +140,21 @@ body {
     font-size: 18px;
     margin-bottom: 10px;
 } 
-.profile-container {
+.profile-container{
     display: flex;
     align-items: left;
     justify-content: left;
     flex-direction: column;
     gap: 20px;
-    background: linear-gradient(180deg, #1d002c, #190439);
+    background: linear-gradient(180deg, #ff00ff, #ff6b6b);
     border-radius: 10PX;
-    width: 600px;
-    height: 300px;
-    margin-top: 100px;
+    width: 990px;
+    height:600px;
+    margin-top: 20px;
     margin-bottom: 50px;
-    text-align:left;
-    
+    text-align:left;  
+    font-size: 18px;  
+    padding-left: 10px;
 
 
 }
@@ -175,7 +176,7 @@ body {
 
 
 }
-header:hover, .profile-container:hover, .bento-container:hover, footer:hover, .profile-container1:hover {
+header:hover, .profile-container:hover, .bento-container:hover, footer:hover, .profile-container1:hover , .profile-container:hover{
     transform: scale(1.02);
 }
 .titre{
@@ -253,6 +254,10 @@ footer {
     opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
 }
+.profile-container {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
 
 .hero {
     animation-delay: 0.3s;
@@ -263,6 +268,9 @@ footer {
 }
 
 .profile-container1 {
+    animation-delay: 0.9s;
+}
+.profile-container {
     animation-delay: 0.9s;
 }
 
@@ -281,5 +289,6 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 

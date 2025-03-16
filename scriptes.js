@@ -24,3 +24,39 @@ window.addEventListener("scroll", function() {
         }
     });
 });
+
+function scrollToSection(sectionId) {
+    let element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Appliquer un effet uniquement sur les boutons sans toucher au reste du site
+document.addEventListener("DOMContentLoaded", function() {
+    let links = document.querySelectorAll(".nav-links a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function(event) {
+            let targetId = this.getAttribute("onclick")?.match(/'([^']+)'/);
+
+            if (targetId) {
+                event.preventDefault();
+                scrollToSection(targetId[1]);
+            }
+        });
+
+        // Ajout d'un effet de sélection sur le bouton cliqué
+        link.addEventListener("mousedown", function() {
+            this.style.transform = "scale(0.9)";
+        });
+
+        link.addEventListener("mouseup", function() {
+            this.style.transform = "scale(1)";
+        });
+
+        link.addEventListener("mouseleave", function() {
+            this.style.transform = "scale(1)";
+        });
+    });
+});
