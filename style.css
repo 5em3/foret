@@ -19,6 +19,22 @@ body {
     
 
 }
+
+.discord-btn {
+    background-color: #5865F2;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+.discord-btn:hover {
+    background-color: #4752c4;
+}
 #pa {
     color: white;
 }
